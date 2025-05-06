@@ -13,6 +13,10 @@ If you are developing a production application, we recommend using TypeScript an
 
 # portfolio-mbdlx
 
+<<<<<<< HEAD
 Le Header contient des liens ancrés vers chaque section :
 #about, #projects, #contact
 Chaque composant de section a un id correspondant pour que le scroll fonctionne.
+=======
+backgroundAnimation avec particles de react-particles
+>>>>>>> 63bf95e20bc5f33cbf15ed7ad103dad589a05d2c

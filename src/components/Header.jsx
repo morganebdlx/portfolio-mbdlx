@@ -18,6 +18,7 @@ const Header = () => {
       {!animationDone ? (
         <div className="welcome-message">
           <p>Bienvenue</p>
+          <h1>Bienvenue</h1>
         </div>
       ) : (
         <h1 className="reduced-title">Portfolio Morgane B.</h1>
