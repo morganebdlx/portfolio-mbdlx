@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import FloatingContact from "./components/FloatingContact";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <FloatingContact />
     </div>
   );
 }

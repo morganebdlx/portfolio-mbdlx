@@ -17,7 +17,7 @@ const Header = () => {
     <header className={`header ${animationDone ? "animate-done" : "animate-start"}`}>
       {!animationDone ? (
         <div className="welcome-message">
-          <h1>Bienvenue</h1>
+          <p>Bienvenue</p>
         </div>
       ) : (
         <h1 className="reduced-title">Portfolio Morgane B.</h1>
