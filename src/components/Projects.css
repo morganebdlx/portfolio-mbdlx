@@ -1,0 +1,11 @@
+.projects-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: column;
+  justify-content: center;
+  gap: 2rem;
+}
