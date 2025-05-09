@@ -1,9 +1,21 @@
 .header {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 0;
   transition: all 0.5s ease;
   z-index: 100;
+  width: 100%;
+  position: sticky;
+  background-color: #fcf5ea;
+  z-index: 2000;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.062);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .welcome-message {
@@ -16,8 +28,8 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(101, 104, 76, 0.8);
-  color: #f2efe4;
-  font-size: 4rem;
+  color: #ffffff;
+  font-size: 20rem;
   text-align: center;
   transition: transform 2s ease, font-size 3s ease, opacity 1s ease;
   z-index: 10;
@@ -30,11 +42,31 @@
 }
 
 .reduced-title {
-  font-size: 2rem;
-  color: #65684c;
+  color: #f2efe4;
   position: relative;
   top: 0;
   left: 0;
-  visibility: visible;
-  transition: font-size 2s ease;
+}
+
+.image-content img {
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-content img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.logo-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-content img {
+  width: 500px;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }

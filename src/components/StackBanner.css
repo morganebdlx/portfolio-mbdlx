@@ -1,0 +1,35 @@
+.stack-banner {
+  padding: 50px 20px;
+  background-color: #f7f6f3;
+  text-align: center;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 30px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.062);
+  text-align: center;
+
+}
+
+.stack-banner h2 {
+  color: #6E7660;
+  margin-bottom: 30px;
+}
+
+.stack-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stack-logos img {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.stack-logos img:hover {
+  transform: scale(1.1);
+}

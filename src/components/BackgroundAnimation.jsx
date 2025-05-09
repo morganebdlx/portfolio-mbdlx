@@ -14,15 +14,15 @@ export default function BackgroundAnimation() {
         id="tsparticles"
         init={particlesInit}
         options={{
-          background: { color: { value: "#f2efe4" } },
+          background: { color: { value: "#fcf5ea" } },
           particles: {
             number: { value: 50 },
             size: { value: 2 },
-            color: { value: "#ffffff" },
+            color: { value: "#b7c4b6" },
             links: {
               enable: true,
               distance: 150,
-              color: "#ffffff",
+              color: "#b7c4b6",
               opacity: 0.3,
               width: 1,
             },

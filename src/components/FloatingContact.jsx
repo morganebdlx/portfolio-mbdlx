@@ -15,11 +15,11 @@ function FloatingContact() {
         <div className="modal-overlay" onClick={() => setIsOpen(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={() => setIsOpen(false)}>×</button>
-            <h2>Contactez-moi</h2>
+            <h3>Contactez-moi</h3>
             <ul>
-              <li>Email : <a href="mailto:tonadresse@email.com">tonadresse@email.com</a></li>
-              <li>LinkedIn : <a href="https://linkedin.com/in/tonprofil" target="_blank">Mon LinkedIn</a></li>
-              <li>GitHub : <a href="https://github.com/tonpseudo" target="_blank">Mon GitHub</a></li>
+              <li>Email : <a href="mailto:morganebourdillon@gmail.com">morganebourdillon@gmail.com</a></li>
+              <li>LinkedIn : <a href="www.linkedin.com/in/morgane-bourdillon-18929042" target="_blank">Mon Profil LinkedIn</a></li>
+              <li>GitHub : <a href="https://github.com/morganebdlx" target="_blank">Mon GitHub</a></li>
             </ul>
           </div>
         </div>

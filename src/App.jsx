@@ -1,11 +1,12 @@
 import "./App.css";
 import BackgroundAnimation from "./components/BackgroundAnimation";
 import Header from "./components/Header";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-import FloatingContact from "./components/FloatingContact";
 
+import FloatingContact from "./components/FloatingContact";
+import Footer from "./components/Footer";
+import StackBanner from "./components/StackBanner";
+import Hero from "./components/Hero";
+import BackgroundAudio from "./components/BackgroundAudio";
 
 function App() {
 
@@ -14,12 +15,13 @@ function App() {
       <BackgroundAnimation />
       <Header />
       <main>
-        <About />
-        <Projects />
-        <Contact />
+        <Hero />
+        <StackBanner />
+
+        <FloatingContact />
+        <BackgroundAudio />
       </main>
       <Footer />
-      <FloatingContact />
     </div>
   );
 }
