@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div>
-      <p>GitHub</p>
+      <p></p>
     </div>
   );
 }

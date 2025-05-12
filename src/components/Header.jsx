@@ -1,29 +1,37 @@
 import React, { useState, useEffect } from "react";
-import "./Header.css"; // Assure-toi que le CSS est bien importé
+import "./Header.css";
+import photoMBL from "../assets/images/photoMBL.png";
+import logoAtelierSureau from "../assets/images/logo-atelier-sureau.png";
 
 const Header = () => {
   const [animationDone, setAnimationDone] = useState(false);
 
   useEffect(() => {
-    // Quand le composant se monte, déclenche l'animation
+
     const timer = setTimeout(() => {
       setAnimationDone(true);
-    }, 3000); // Durée de l'animation (3 secondes)
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <header className={`header ${animationDone ? "animate-done" : "animate-start"}`}>
-      {!animationDone ? (
-        <div className="welcome-message">
-          <p>Bienvenue</p>
-          <h1>Bienvenue</h1>
+    {!animationDone ? (
+      <div className="welcome-message">
+        <p>Bienvenue</p>
+      </div>
+    ) : (
+      <div className="header-content">
+        <div className="logo-content">
+        <img src={logoAtelierSureau} alt="Logo atelier Sureau" />
         </div>
-      ) : (
-        <h1 className="reduced-title">Portfolio Morgane B.</h1>
-      )}
-    </header>
+        <div className="image-content">
+          <img src={photoMBL} alt="Photo de profil" />
+        </div>
+      </div>
+    )}
+  </header>
   );
 };
 
