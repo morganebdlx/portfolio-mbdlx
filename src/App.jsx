@@ -1,6 +1,5 @@
 import "./App.css";
 import Header from "./components/Header";
-import FloatingContact from "./components/FloatingContact";
 import Footer from "./components/Footer";
 import StackBanner from "./components/StackBanner";
 import Intro from "./components/Intro";
@@ -16,7 +15,6 @@ function App() {
         <PhotosSection />
         <Intro />
         <StackBanner />
-        <FloatingContact />
         <BackgroundAudio />
       </main>
       <Footer />

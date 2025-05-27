@@ -57,7 +57,6 @@
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-
 .menu-button {
   width: 116px;
   height: 30px;
@@ -67,27 +66,58 @@
   color: #275838;
   letter-spacing: -1.5px;
   font-size: 20px;
-  padding: 10px;
+  padding: 0;
+  margin: 60px 90px 0 0;
   border-radius: 50px;
+}
+
+.menu-button:hover {
+  background-color: #275838;
+  color: #f4f4f2;
 }
 
 .nav-menu {
   position: absolute;
   top: 85px;
-  right: 90px;
+  right: 60px;
   padding: 5px;
   z-index: 8;
   display: flex;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
   overflow: hidden;
   opacity: 0;
 }
 
 .nav-menu.open {
-  transform: scaleY(1);
+  transform: translateY(0);
+  pointer-events: auto;
   opacity: 1;
+}
+
+.nav-menu ul li {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.nav-menu.open ul li:nth-child(1) {
+  transition-delay: 0.2s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-menu.open ul li:nth-child(2) {
+  transition-delay: 0.5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-menu.open ul li:nth-child(3) {
+  transition-delay: 0.8s;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .nav-menu ul {
@@ -107,7 +137,7 @@
 }
 
 .nav-menu .rectangle a {
-  background-color: #2E6965;
+  background-color: #275838;
   color: #F4F4F2;
   font-weight: 400;
   font-size: 18px;
@@ -115,8 +145,16 @@
   text-align: center;
 }
 
+.nav-menu .rectangle a:hover, 
+.nav-menu .rounded a:hover {
+  background-color: #F4F4F2;
+  border: solid 0.5px #275838;
+  color: #275838;
+  font-weight: 600;
+}
+
 .nav-menu .rounded a {
-  background-color: #2E6965;
+  background-color: #275838;
   color: #F4F4F2;
   font-weight: 400;
   font-size: 18px;

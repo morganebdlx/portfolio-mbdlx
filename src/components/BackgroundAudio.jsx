@@ -21,7 +21,7 @@ const BackgroundAudio = () => {
     <div className="audio-controller" onClick={toggleAudio}>
       <audio ref={audioRef} src={guembriAudio} loop autoPlay />
       <button className="audio-button" onClick={toggleAudio}>
-        {isPlaying ? "Pause musique" : "Jouer musique"}
+        {isPlaying ? "Pause" : "Play"}
       </button>
     </div>
   );
