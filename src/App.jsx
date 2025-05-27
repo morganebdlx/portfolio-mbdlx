@@ -1,5 +1,5 @@
 import "./App.css";
-import BackgroundAnimation from "./components/BackgroundAnimation";
+
 import Header from "./components/Header";
 
 import FloatingContact from "./components/FloatingContact";
@@ -12,7 +12,6 @@ function App() {
 
   return (
     <div>
-      <BackgroundAnimation />
       <Header />
       <main>
         <Hero />

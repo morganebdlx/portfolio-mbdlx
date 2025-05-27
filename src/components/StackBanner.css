@@ -1,6 +1,6 @@
 .stack-banner {
   padding: 50px 20px;
-  background-color: #f7f6f3;
+  background-color: #f2f4f4;
   text-align: center;
   width: 80%;
   display: flex;
@@ -14,7 +14,7 @@
 }
 
 .stack-banner h2 {
-  color: #6E7660;
+  color: #275838;
   margin-bottom: 30px;
 }
 

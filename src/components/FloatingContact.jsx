@@ -1,4 +1,3 @@
-// src/components/FloatingContact.jsx
 import { useState } from "react";
 import "./FloatingContact.css";
 
