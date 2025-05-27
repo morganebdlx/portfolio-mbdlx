@@ -1,20 +1,12 @@
 .header {
   position: absolute;
   top: 0;
-  transition: all 0.5s ease;
-  z-index: 100;
   width: 100%;
-  position: sticky;
-  background-color: #fcf5ea;
-  z-index: 2000;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.062);
+  background-color: transparent;
 }
 
 .header-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -27,8 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(101, 104, 76, 0.8);
-  color: #ffffff;
+  background-color: #27583895;
+  color: #F4F4F2;
   font-size: 20rem;
   text-align: center;
   transition: transform 2s ease, font-size 3s ease, opacity 1s ease;
@@ -41,12 +33,6 @@
   opacity: 0;
 }
 
-.reduced-title {
-  color: #f2efe4;
-  position: relative;
-  top: 0;
-  left: 0;
-}
 
 .image-content img {
   width: 300px;
@@ -65,8 +51,75 @@
   justify-content: center;
 }
 .logo-content img {
-  width: 500px;
+  width: 200px;
   height: 180px;
   object-fit: cover;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.menu-button {
+  width: 116px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #F4F4F2;
+  border: solid 1px #275838;
+  color: #275838;
+  letter-spacing: -1.5px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.nav-menu {
+  top: 85px;
+  right: 90px;
+  padding: 5px;
+  z-index: 8;
+  display: flex;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.nav-menu.open {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.nav-menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li a{
+  text-decoration: none;
+  color: #F4F4F2;
+  display: block;
+}
+
+.nav-menu .rectangle a {
+  background-color: #2E6965;
+  color: #F4F4F2;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.nav-menu .rounded a {
+  background-color: #2E6965;
+  color: #F4F4F2;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px 40px;
+  text-align: center;
+  border-radius: 50px;
 }

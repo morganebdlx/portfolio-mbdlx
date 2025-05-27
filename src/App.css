@@ -7,10 +7,10 @@ body {
     font-style: normal;
     margin: 10px auto;
     padding: 0;
+    background-color: #f4f4f2;
   }
 
-h1, .bodoni-title {
-  font-family: "Shippori Mincho", serif;
+h1 {
   font-weight: 600;
   font-style: normal;
 }
@@ -37,4 +37,8 @@ h5 {
 
 h6 {
     font-size: 1.25rem;
+}
+
+strong {
+    font-weight: 700;
 }
