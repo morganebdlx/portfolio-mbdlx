@@ -57,3 +57,12 @@
     background-color: antiquewhite;
 }
 
+.photo-1:hover,
+.photo-2:hover,
+.photo-3:hover,
+.photo-4:hover,
+.photo-5:hover {
+    transform: scale(1.3);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}

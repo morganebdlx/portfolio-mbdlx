@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
-  text-align: center;
 }
 
 .intro-left {
@@ -21,11 +20,13 @@
 
 .intro-left h1,
 .intro-left h2 {
+  display: flex;
+  justify-content: left;
   margin: 0;
   padding: 0;
   color: #F4f4f2;
   letter-spacing: -2px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 0.8;
 }
 
@@ -40,9 +41,12 @@
   color: #F4f4f2;
 }
 
-.intro-right h6 {
+.intro-right p {
+  font-size: 1.10rem;
   font-weight: 300;
-  line-height: 0.8;
+  line-height: 0.9;
+  margin: 15px;
+  padding: 0;
 }
 
 @media (min-width: 768px) {

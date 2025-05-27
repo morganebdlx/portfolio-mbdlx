@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
 
 body {
-    font-family: "Darker Grotesque", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-style: normal;
     margin: 10px auto;
     padding: 0;
     background-color: #f4f4f2;
+    letter-spacing: -1px;
   }
 
 h1 {
@@ -40,5 +43,5 @@ h6 {
 }
 
 strong {
-    font-weight: 700;
+    font-weight: 600;
 }
