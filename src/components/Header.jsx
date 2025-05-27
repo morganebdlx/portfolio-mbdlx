@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import photoMBL from "../assets/images/photoMBL.png";
 import logoAtelierSureau from "../assets/images/logo-atelier-sureau.png";
 
 const Header = () => {
@@ -15,6 +14,11 @@ const Header = () => {
     return () => clearTimeout(timer);
   }, []);
 
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className={`header ${animationDone ? "animate-done" : "animate-start"}`}>
     {!animationDone ? (
@@ -26,9 +30,19 @@ const Header = () => {
         <div className="logo-content">
         <img src={logoAtelierSureau} alt="Logo atelier Sureau" />
         </div>
-        <div className="image-content">
-          <img src={photoMBL} alt="Photo de profil" />
+        <div className="menu">
+          <button type="button" className="menu-button"  onClick={toggleMenu} aria-label="Menu">
+            MENU
+          </button>
         </div>
+
+        <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+          <ul>
+            <li className="rectangle"><a href="#">Projets</a></li>
+            <li className="rounded"><a href="#">A propos</a></li>
+            <li className="rectangle"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     )}
   </header>
