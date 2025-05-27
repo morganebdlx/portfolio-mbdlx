@@ -14,7 +14,7 @@ const Intro = () => {
             Ici vous êtes dans <strong>mon univers</strong>, je vais vous parler de ce que <strong>j’ai fait</strong>, ce que <strong>je fais</strong>, mais aussi qui <strong>je suis</strong>.
           </p>
           <p>
-            Vous pourrez y <strong>découvrir mes projets</strong>, en savoir plus <strong>mes compétences</strong> et sur <strong>mon expérience</strong>.
+            Vous pourrez y <strong>découvrir mes projets</strong>, en savoir plus sur <strong>mes compétences</strong> et sur <strong>mon expérience</strong>.
           </p>
           <p>
             J'aime la <strong>création de solutions innovantes</strong>, <strong>être en équipe</strong> pour créer un projet : dans <strong>une équipe passionnée, passionnante, inspirée et inspirante</strong>.
