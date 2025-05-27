@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/components/FloatingContact.css
 .floating-btn {
     position: fixed;
     bottom: 20px;
@@ -18,6 +19,8 @@
   .floating-btn:hover {
     transform: scale(1.1) rotate(2deg);
   }
+=======
+>>>>>>> 217f90726a6ebc68f4e077f64823ec696cc3fb2b:src/components/Contact.css
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -44,6 +47,10 @@
   .modal-content h3 {
     margin-top: 0;
     color: #275838;
+<<<<<<< HEAD:src/components/FloatingContact.css
+=======
+    letter-spacing: -2px;
+>>>>>>> 217f90726a6ebc68f4e077f64823ec696cc3fb2b:src/components/Contact.css
     font-weight: 800;
   }
 
@@ -54,7 +61,8 @@
 
   .modal-content li {
     margin: 10px 0;
-    font-size: 1.25em;
+    font-size: 1.25rem;
+    font-weight: 400;
   }
 
   .modal-content a {
@@ -66,7 +74,12 @@
 
   .modal-content a:hover {
     z-index: 1;
+<<<<<<< HEAD:src/components/FloatingContact.css
     background-color: #b6e5acba;
+=======
+    background-color: #27583895;
+    color: #f4f4f2;
+>>>>>>> 217f90726a6ebc68f4e077f64823ec696cc3fb2b:src/components/Contact.css
   }
 
   .close-btn {
@@ -75,6 +88,7 @@
     right: 14px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
+    color: #275838;
   }

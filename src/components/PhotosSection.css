@@ -1,0 +1,68 @@
+.photos-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-1 {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 260px;
+    border: solid 1px #1c1c1c;
+    transform: rotate(-15deg);
+    background-color: antiquewhite;
+}
+
+.photo-2 {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 260px;
+    border: solid 1px #1c1c1c;
+    transform: rotate(-6deg);
+    background-color: antiquewhite;
+}
+
+.photo-3 {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 260px;
+    border: solid 1px #1c1c1c;
+    transform: rotate(-2deg);
+    background-color: antiquewhite;
+}
+
+.photo-4 {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 260px;
+    border: solid 1px #1c1c1c;
+    transform: rotate(8deg);
+    background-color: antiquewhite;
+}
+
+.photo-5 {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 260px;
+    border: solid 1px #1c1c1c;
+    transform: rotate(5deg);
+    background-color: antiquewhite;
+}
+
+.photo-1:hover,
+.photo-2:hover,
+.photo-3:hover,
+.photo-4:hover,
+.photo-5:hover {
+    transform: scale(1.3);
+    z-index: 10;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
