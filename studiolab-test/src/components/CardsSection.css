@@ -1,0 +1,403 @@
+.cards-section {
+  color: #F4F5F3;
+  width: 100%;
+  height: 950px;
+  background-color: #063238;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.intro-left{
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+
+.intro-right {
+  width: 50%;
+  margin-right: 15%;
+  margin-left: 10%;
+  margin-top: 80px;
+}
+
+.intro-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  color: #F4F5F3;
+}
+
+.cards-section-button {
+  color: #F4F5F3;
+  background-color: #063238;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 33px;
+  padding: 9px 23px;
+  width: 198px;
+  height: 46px;
+  border: 1px solid #F4F5F3;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 413px;
+  height: 250px;
+  background-color: #f4f5f3;
+  color: #000000;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.card h3 {
+  font-weight: 600;
+  margin: 0 0;
+}
+
+.arrow-card {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(-39deg);
+  border-radius: 33px;
+  color: #1C1C1C;
+  border: solid 1px #1C1C1C;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.card-text-hover {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 413px;
+  height: 241px;
+  background: linear-gradient(103.43deg, #121F1E 0.06%, #2E6965 50%, #6242FB 99.94%);
+  color: #F4F5F3;
+  border-radius: 25px;
+  padding: 20px;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.8s, transform 0.8s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  filter: blur(3px);
+}
+
+.card-content:hover .card-text-hover {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.card-text-default {
+  position: relative;
+  width: 413px;
+  height: 250px;
+  background-color: #f4f5f3;
+  color: #000000;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-text-default .arrow-card {
+  top: -10px;
+  right: 10px;
+}
+
+.card-content:hover .arrow-card {
+  opacity: 1;
+  transform: rotate(141deg);
+  border: solid 1px #F4F5F3;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+}
+
+.right-arrow-icon {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+}
+
+.bottom-arrow-icon {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  color: #F4F5F3;
+}
+
+.intro-left .mobile {
+  display: none;
+}
+
+.intro-left .desktop {
+  display: block;
+}
+
+.placeholder {
+  width: 70px;
+  height: 93px;
+  background-color:#6242FB;
+  transform: rotate(90deg);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .cards-section {
+    height: auto;
+    padding: 0 10px 5px 10px;
+  }
+
+  .intro-right {
+    margin-right: 150px;
+  }
+
+  .intro-left {
+    margin-left: 100px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 330px;
+    height: 200px;
+  }
+
+  .arrow-card {
+    top: 35px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-text-hover {
+    width: 90%;
+    height: 100%;
+  }
+
+  .card-text-hover .arrow-card {
+    top: 8px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .card h3 {
+    font-size: 28px;
+  }
+
+  .card-text-hover p {
+    font-size: 14px;
+    margin: 0 10% 10% 0;
+  }
+
+  .card-text-default .arrow-card {
+    top: 10px;
+    right: 55px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards-section {
+    height: auto;
+    padding: 0 10px 5px 10px;
+  }
+
+  .intro-left .desktop {
+    display: none;
+  }
+
+  .intro-left .mobile {
+    display: block;
+  }
+
+  .intro-left h2 {
+    letter-spacing: -1px;
+    font-size: 32px;
+  }
+
+  .intro{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .intro-left,
+  .intro-right {
+    width: 90%;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .card-text-default {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-text-hover {
+    width: 92%;
+    height: 100%;
+  }
+
+  .card-text-default .arrow-card {
+    top: 0;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .cards-section {
+    height: auto;
+    padding: 0 10px 15px 0;
+  }
+
+  .intro-left .desktop {
+    display: none;
+  }
+
+  .intro-left .mobile {
+    display: block;
+  }
+
+  .intro-left h2 {
+    letter-spacing: -1px;
+    font-size: 32px;
+  }
+
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .intro-left,
+  .intro-right {
+    width: 90%;
+    margin: 0;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    margin: 0;
+    width: 330px;
+    height: 200px;
+  }
+
+  .arrow-card {
+    top: 35px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-text-hover {
+    width: 90%;
+    height: 100%;
+    margin-bottom: none;
+  }
+
+  .card-text-hover .arrow-card {
+    top: 10px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .card h3 {
+    font-size: 29px;
+  }
+
+  .card-text-hover p {
+    font-size: 14px;
+    margin: 0 10% 10% 0;
+  }
+
+  .card-text-default .arrow-card {
+    top: 20px;
+    right: 55px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .placeholder {
+    width: 41px;
+    height: 93px;
+  }
+}

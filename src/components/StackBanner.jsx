@@ -36,7 +36,7 @@ const StackBanner = () => {
           <img src={wordpressLogo} alt="WordPress" />
           <img src={phpLogo} alt="PHP" />
         </div>
-      </div>  
+      </div>
 
       <div className="stack-finish stack-logos">
         <h4>Langages Bruts</h4>
@@ -54,7 +54,7 @@ const StackBanner = () => {
           <img src={openaiLogo} alt="Open AI" />
         </div>
       </div>
-      
+
     </div>
   );
 };

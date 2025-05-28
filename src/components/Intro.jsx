@@ -1,5 +1,6 @@
 import React from 'react';
 import './Intro.css';
+import { FiArrowRightCircle } from "react-icons/fi";
 
 const Intro = () => {
   return (
@@ -28,6 +29,18 @@ const Intro = () => {
           <p>
             N'hésitez pas à <strong>parcourir mon travail</strong> et à <strong>me contacter</strong> pour toute question ou opportunité !
           </p>
+        </div>
+
+        <div className="call-to-action">
+          <button className="cta-btn">
+            <a href="#">MES PROJETS <FiArrowRightCircle className="cta-icon"/></a>
+          </button>
+          <button className="cta-btn">
+            <a href="mailto:morganebourdillon@gmail.com">ME CONTACTER <FiArrowRightCircle className="cta-icon"/></a>
+          </button>
+          <button className="cta-btn">
+            <a href="#">MON UNIVERS <FiArrowRightCircle className="cta-icon"/></a>
+          </button>
         </div>
       </div>
     </div>

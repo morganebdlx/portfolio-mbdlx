@@ -1,4 +1,5 @@
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { ImEnvelop } from "react-icons/im";
 import "./Footer.css";
 
 function Footer() {
@@ -17,11 +18,13 @@ function Footer() {
           <FaGithub />
         </a>
         <a href="mailto:morganebourdillon@gmail.com">
-          <FaEnvelope />
+          <ImEnvelop />
         </a>
       </div>
-
-      <p className="dm-sans">© 2025 Morgane Bourdillon All rights reserved.</p>
+      <div className="big-name">
+        <p>Atelier Sureau</p>
+      </div>
+      <p className="dm-sans">© 2025 Atelier Sureau & Morgane Bourdillon All rights reserved.</p>
     </footer>
   );
 };
