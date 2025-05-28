@@ -34,7 +34,19 @@
 }
 
 .big-name p {
-  font-size: 14rem;
+  font-size: 10vw; /* Default font size based on viewport width */
   color: #161817be;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .big-name p {
+    font-size: 8vw; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .big-name p {
+    font-size: 6vw; /* Adjust font size for small screens */
+  }
 }
