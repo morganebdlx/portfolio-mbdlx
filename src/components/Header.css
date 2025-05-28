@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #27583895;
+  background-color: #275838ce;
   color: #F4F4F2;
   font-size: 20rem;
   text-align: center;
@@ -52,8 +52,9 @@
   margin: 50px;
 }
 .logo-content img {
-  width: 200px;
-  height: 180px;
+  width: 180px;
+  height: 130px;
+  margin-left: 50px;
 }
 
 .menu-button {
@@ -68,6 +69,7 @@
   padding: 0;
   margin: 60px 90px 0 0;
   border-radius: 50px;
+  font-family: Yeseva One, sans-serif;
 }
 
 .menu-button:hover {

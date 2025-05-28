@@ -11,6 +11,8 @@ body {
     padding: 0;
     background-color: #f4f4f2;
     letter-spacing: -1px;
+    background-image: url('./assets/images/background.png');
+    background-position: center;
   }
 
 h1 {

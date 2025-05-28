@@ -12,21 +12,24 @@
   color: #275838;
   margin-bottom: 30px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: -2px;
 }
 
 .stack-logos {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
+
 .stack-logos h4 {
-  color: #161817;
-  font-weight: 300;
-  margin-bottom: 20px;
+  color: #161817be;
+  font-weight: 200;
+  margin-bottom: 5px;
   text-align: center;
 }
 
@@ -38,12 +41,13 @@
 }
 
 .stack-logos img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: auto;
   object-fit: contain;
+  filter: grayscale(30%);
   transition: transform 0.3s ease;
 }
 
 .stack-logos img:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
