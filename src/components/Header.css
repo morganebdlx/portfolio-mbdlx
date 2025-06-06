@@ -33,27 +33,15 @@
   opacity: 0;
 }
 
-
-.image-content img {
-  width: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.image-content img:hover {
-  transform: scale(1.1) rotate(2deg);
-}
-
 .logo-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin: 0 50px;
 }
 .logo-content img {
   width: 180px;
-  height: 130px;
+  height: 180px;
   margin-left: 50px;
 }
 
@@ -69,7 +57,7 @@
   padding: 0;
   margin: 60px 90px 0 0;
   border-radius: 50px;
-  font-family: Yeseva One, sans-serif;
+  font-family: "Abril Fatface", serif;
 }
 
 .menu-button:hover {

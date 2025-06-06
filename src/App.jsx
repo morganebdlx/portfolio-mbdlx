@@ -1,24 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import StackBanner from "./components/StackBanner";
-import Intro from "./components/Intro";
-import BackgroundAudio from "./components/BackgroundAudio";
-import PhotosSection from "./components/PhotosSection";
+import Layout from "./components/Layout";
 
 function App() {
-
   return (
-    <div>
-      <Header />
-      <main>
-        <PhotosSection />
-        <Intro />
-        <StackBanner />
-        <BackgroundAudio />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/a-propos" element={<About />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
+
 export default App;

@@ -12,6 +12,7 @@
   margin: 0 15px;
   text-decoration: none;
   color: #161817be;
+  cursor: pointer;
 }
 
 .footer-icons a {
@@ -21,32 +22,33 @@
 }
 
 .footer p {
-    color: #16181776;
-    font-size: 0.9rem;
-    margin: 0;
+  color: #16181776;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 .big-name {
   width: 100%;
   text-align: center;
   margin: 10px;
-  font-family: Yeseva One, sans-serif;
+  font-family: "Abril Fatface", serif;
+
 }
 
 .big-name p {
-  font-size: 10vw; /* Default font size based on viewport width */
+  font-size: 14vw;
   color: #161817be;
   margin: 0;
 }
 
 @media (max-width: 768px) {
   .big-name p {
-    font-size: 8vw; /* Adjust font size for medium screens */
+    font-size: 14vw;
   }
 }
 
 @media (max-width: 480px) {
   .big-name p {
-    font-size: 6vw; /* Adjust font size for small screens */
+    font-size: 12vw;
   }
 }

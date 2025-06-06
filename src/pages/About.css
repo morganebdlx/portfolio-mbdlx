@@ -1,0 +1,122 @@
+.about-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: max-content;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.timeline-item {
+  scroll-snap-align: start;
+  flex: 0 0 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-right: dotted 2px #161817be;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+}
+
+.intro-about {
+  padding: 2rem;
+}
+
+.intro-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.intro-text p{
+  flex: 1;
+  display: flex;
+  justify-content: left;
+}
+
+.intro-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.intro-photo img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.timeline-item h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #275838;
+}
+
+.timeline-item p {
+  font-size: 1.1rem;
+  max-width: 900px;
+  text-align: justify;
+  color: #161817be;
+  column-count: 3;
+  column-gap: 2rem;
+  max-height: 70vh;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.swipe-left {
+  position: sticky;
+  bottom: 100px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #275838;
+  z-index: 1;
+  background: #F4F4F2;
+  padding: 10px;
+  margin-top: 20px;
+  animation: swipeFade 2s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+@keyframes swipeFade {
+  0%, 100% { opacity: 0.4; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(5px); }
+}
