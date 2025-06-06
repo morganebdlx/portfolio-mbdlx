@@ -1,6 +1,7 @@
 import React from 'react';
 import './Intro.css';
 import { FiArrowRightCircle } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 const Intro = () => {
   return (
@@ -39,7 +40,7 @@ const Intro = () => {
             <a href="mailto:morganebourdillon@gmail.com">ME CONTACTER <FiArrowRightCircle className="cta-icon"/></a>
           </button>
           <button className="cta-btn">
-            <a href="#">MON UNIVERS <FiArrowRightCircle className="cta-icon"/></a>
+            <Link to="/a-propos">MON UNIVERS <FiArrowRightCircle className="cta-icon"/></Link>
           </button>
         </div>
       </div>
