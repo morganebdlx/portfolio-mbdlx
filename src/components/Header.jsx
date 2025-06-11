@@ -9,7 +9,7 @@ const Header = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimationDone(true);
-    }, 2500);
+    }, 1500);
     return () => clearTimeout(timer);
   }, []);
 

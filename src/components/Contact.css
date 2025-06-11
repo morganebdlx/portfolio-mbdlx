@@ -62,3 +62,18 @@
     cursor: pointer;
     color: #275838;
   }
+
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 70%;
+      padding: 20px;
+    }
+
+    .modal-content h3 {
+      font-size: 1.5rem;
+    }
+
+    .modal-content li {
+      font-size: 1rem;
+    }
+  }
