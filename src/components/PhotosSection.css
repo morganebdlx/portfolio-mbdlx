@@ -4,8 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 2rem 0;
 }
 
 .photo-1,
@@ -110,8 +108,4 @@
     margin: 0;
   }
 
-  .photos-section {
-    width: 90%;
-    height: 70vh;
-  }
 }

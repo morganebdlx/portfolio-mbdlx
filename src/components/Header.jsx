@@ -3,13 +3,9 @@ import "./Header.css";
 import "./Contact.css";
 import logoAtelierSureau from "../assets/images/logo-atelier-sureau.png";
 import { Link } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
 
 
 const Header = () => {
-  const location = useLocation();
-  const isAboutPage = location.pathname === '/a-propos';
-
   const [animationDone, setAnimationDone] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -27,7 +23,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-  <header className={`header ${animationDone ? "animate-done" : "animate-start"} ${isAboutPage ? "about-page" : ""}`}>
+  <header className={`header ${animationDone ? "animate-done" : "animate-start"}`}>
     {!animationDone ? (
       <div className="welcome-message">
         <p>Bienvenue</p>

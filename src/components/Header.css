@@ -19,9 +19,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #275838ce;
+  background-color: #1f462dce;
   color: #F4F4F2;
-  font-size: 20rem;
+  font-size: 18rem;
   text-align: center;
   transition: transform 2s ease, font-size 3s ease, opacity 1s ease;
   z-index: 10;
@@ -39,15 +39,16 @@
   justify-content: center;
   margin: 0 50px;
 }
+
 .logo-content img {
-  width: 180px;
-  height: 180px;
-  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
 }
 
 .menu-button {
   width: 116px;
-  height: 30px;
+  height: 40px;
   cursor: pointer;
   background-color: transparent;
   border: solid 1px #275838;
@@ -67,7 +68,7 @@
 
 .nav-menu {
   position: absolute;
-  top: 85px;
+  top: 95px;
   right: 60px;
   padding: 5px;
   z-index: 8;
@@ -180,7 +181,6 @@
   }
 
   .welcome-message {
-    display: none;
+    font-size: 5rem;
   }
 }
-
