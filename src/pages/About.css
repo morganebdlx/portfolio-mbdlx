@@ -15,12 +15,9 @@
   width: max-content;
   overflow-x: auto;
   scroll-behavior: smooth;
-  gap: 2rem;
-  padding: 2rem;
 }
 
 .timeline-item {
-  position: relative;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   scroll-snap-align: start;
@@ -66,15 +63,10 @@
 }
 
 .intro-photo img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 50%;
   object-fit: cover;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.intro-photo img:hover {
-  transform: scale(1.1) rotate(2deg);
 }
 
 .timeline-item h2 {
@@ -99,10 +91,10 @@
   position: sticky;
   bottom: 100px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #275838;
   z-index: 1;
-  background: #F4F4F2;
+  background: transparent;
   padding: 10px;
   margin-top: 20px;
   animation: swipeFade 2s infinite;
@@ -125,11 +117,10 @@
 
   .timeline-item {
     width: 100%;
-    height: auto;
     min-height: 100vh;
     overflow-y: auto;
     scroll-snap-align: start;
-    padding: 1rem;
+    padding: 90px 25px;
   }
 
   .timeline-item p {
@@ -137,15 +128,12 @@
     overflow: visible;
     column-count: 1;
     font-size: 1rem;
-    line-height: 1.4;
-    padding: 10px;
   }
 
   .intro-content {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
+    align-items: left;
+    justify-content: left;
   }
 
   .intro-photo {
@@ -157,25 +145,13 @@
     width: 70%;
     max-width: 250px;
     height: auto;
-    border-radius: 0.75rem;
+    border-radius: 50%;
   }
 
   .swipe-left {
-    font-size: 1.1rem;
-    bottom: 60px;
-    padding: 8px;
-    margin-top: 10px;
-  }
-
-  /* Removed redundant .timeline-item declaration */
-
-  .intro-text p {
-    justify-content: center;
+    bottom: 400px;
     text-align: center;
+    padding: 0;
+    margin-top: 0;
   }
-
-  .timeline-item h2 {
-    
-  }
-
 }

@@ -152,8 +152,34 @@
   border-radius: 50px;
 }
 
-@media screen and (max-width: 768px) {
-  .header.about-page {
+@media (max-width: 768px) {
+  .logo-content img {
+    width: 120px;
+    height: 120px;
+    margin-left: 0;
+  }
+
+ .menu-button {
+    margin: 40px 30px 0 0;
+    font-size: 16px;
+  }
+
+  .nav-menu.open {
+    right: 25px;
+    top: 65px;
+  }
+
+  .nav-menu .rectangle a {
+    font-size: 16px;
+    padding: 5px 30px;
+  }
+
+  .nav-menu .rounded a {
+    font-size: 16px;
+    padding: 2px 20px;
+  }
+
+  .welcome-message {
     display: none;
   }
 }

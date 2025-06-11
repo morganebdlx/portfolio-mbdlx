@@ -37,7 +37,11 @@
 
 .big-name p {
   font-size: 14vw;
-  color: #161817be;
+  background: linear-gradient(110deg, #275838 30%, #F2F4F4 99%);
+  background-clip: text;
+  -webkit-background-clip: text; /* pour Chrome, Safari */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* pour Chrome, Safari */
   margin: 0;
 }
 
