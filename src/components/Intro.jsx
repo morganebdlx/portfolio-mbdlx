@@ -8,7 +8,7 @@ const Intro = () => {
     <div className="intro">
       <div className="intro-left">
         <h1>Bienvenue</h1>
-        <h2>Portfolio 2025</h2>
+        <h2>Portfolio 2025.</h2>
       </div>
       <div className="intro-right">
         <div>
@@ -23,9 +23,6 @@ const Intro = () => {
           </p>
           <p>
             <em>"De l'idée sur papier au site en production."</em>
-          </p>
-          <p>
-            Je recherche <strong>une alternance</strong> ou bien <strong>ma première expérience</strong>, dans l'idéal une agence digitale.
           </p>
           <p>
             N'hésitez pas à <strong>parcourir mon travail</strong> et à <strong>me contacter</strong> pour toute question ou opportunité !

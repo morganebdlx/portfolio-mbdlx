@@ -15,7 +15,7 @@ export default function About() {
               <p><strong>Prénom :</strong> Morgane</p>
               <p><strong>Âge :</strong> 33 ans</p>
               <p><strong>Localisation :</strong> Bordeaux, France</p>
-              <p>En reconversion professionnelle voici mon histoire...</p>
+              <p>En reconversion professionnelle swipe pour découvrir mon histoire...</p>
             </div>
             <div className="intro-photo">
               <img src={Photo} alt="Morgane Bourdillon" />

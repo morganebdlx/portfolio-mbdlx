@@ -22,7 +22,7 @@ const BackgroundAudio = () => {
   return (
     <div className="audio-controller" onClick={toggleAudio}>
       <audio ref={audioRef} src={guembriAudio} loop autoPlay />
-      <button className="audio-button" onClick={toggleAudio}>
+      <button className="audio-button">
         {isPlaying ? <IoPauseCircleOutline className="audio-button-icons"/> : <IoPlayCircleOutline className="audio-button-icons"/>}
       </button>
     </div>
