@@ -167,9 +167,7 @@
     margin-top: 10px;
   }
 
-  .timeline-item {
-    padding: 1rem;
-  }
+  /* Removed redundant .timeline-item declaration */
 
   .intro-text p {
     justify-content: center;
