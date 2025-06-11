@@ -33,7 +33,7 @@ export default function About() {
 
         <section className="timeline-item">
           <h2>2018</h2>
-          <p>Je signe chez Joon le jour de mon anniversaire, le 8 janvier. Ca y est j'ai un pied chez Air France : le rêve de toute une vie se réalise. Let's go ! Quelle aventure ! Participer aux premiers vols d’une nouvelle compagnie aérienne, être là pour les inaugurations, faire partie des "anciennes" en quelques mois, transmettre avec pédagogie aux nouvelles recrues, et surtout continuer d’apprendre. Je découvre l’Europe, mais aussi des destinations plus lointaines commeLe Caire, Mumbai, Le Cap ou encore Les Seychelles. Le rythme est intense, low-cost oblige : épuisant, mais galvanisant. Une super ambiance, une vraie solidarité entre collègues. Et puis un jour, on apprend qu’un nouveau PDG prend la tête d'AF-KLM et Joon c'est pas son truc... </p>
+          <p>Je signe chez Joon le jour de mon anniversaire, le 8 janvier. Ca y est j'ai un pied chez Air France : le rêve de toute une vie se réalise. Let's go ! Quelle aventure ! Participer aux premiers vols d’une nouvelle compagnie aérienne, être là pour les inaugurations, faire partie des "anciennes" en quelques mois, transmettre avec pédagogie aux nouvelles recrues, et surtout continuer d’apprendre. Je découvre l’Europe, mais aussi des destinations plus lointaines comme Le Caire, Mumbai, Le Cap ou encore Les Seychelles. Le rythme est intense, low-cost oblige : épuisant, mais galvanisant. Une super ambiance, une vraie solidarité entre collègues. Et puis un jour, on apprend qu’un nouveau PDG prend la tête d'AF-KLM et Joon c'est pas son truc... </p>
         </section>
 
         <section className="timeline-item">
