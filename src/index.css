@@ -6,6 +6,12 @@
   --white: #ffffff;
   --ink-muted: #513225;
   --line: rgba(34, 22, 18, 0.24);
+  --surface-muted: #f4f3f0;
+  --surface-subtle: #ecebe7;
+  --tag-border: rgba(125, 140, 105, .5);
+  --overlay: rgba(76, 30, 13, .65);
+  --shadow-card: 0 12px 30px rgba(76, 30, 13, .09);
+  --shadow-modal: 0 18px 45px rgba(76, 30, 13, .25);
   --font-display: "DM Serif Text", Georgia, serif;
   --font-body: "DM Sans", Arial, sans-serif;
   --font-handwritten: "Nothing You Could Do", cursive;

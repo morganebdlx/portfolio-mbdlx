@@ -180,7 +180,7 @@
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  background: #ecebe7;
+  background: var(--surface-subtle);
 }
 .archive-tile > span:last-child {
   display: flex;
