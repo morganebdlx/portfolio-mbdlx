@@ -11,8 +11,8 @@ function Footer() {
     <footer className="footer">
       <div className="footer-links">
         <Link to="/a-propos">À propos</Link>
-        <a href="#projects">Mes projets</a>
-        <a onClick={() => setIsOpen(true)}>Contact</a>
+        <Link to="/projets">Mes projets</Link>
+        <button className="footer-contact" type="button" onClick={() => setIsOpen(true)}>Contact</button>
 
         {isOpen && (
           <div className="modal-overlay" onClick={() => setIsOpen(false)}>
@@ -41,10 +41,8 @@ function Footer() {
           <ImEnvelop />
         </a>
       </div>
-      <div className="big-name">
-        <p>Atelier Sureau</p>
-      </div>
-      <p className="dm-sans">© 2025 Atelier Sureau & Morgane Bourdillon All rights reserved.</p>
+     
+      <p className="dm-sans">© {new Date().getFullYear()} Morgane Bourdillon</p>
     </footer>
   );
 };

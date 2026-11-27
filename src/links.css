@@ -1,0 +1,31 @@
+/* Le trait reste visible et se redessine au survol ou au focus. */
+:is(.nav-menu a, .nav-menu button, .text-link, .button-primary,
+    .home-projects-all, .archive-index a, .project-external-links a,
+    .footer-links a, .footer-contact, .modal-content a) {
+  border-bottom: 0;
+  text-decoration: none;
+  background-image: linear-gradient(var(--olive), var(--olive));
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
+:is(.nav-menu a, .nav-menu button, .text-link, .button-primary,
+    .home-projects-all, .archive-index a, .project-external-links a,
+    .footer-links a, .footer-contact, .modal-content a):is(:hover, :focus-visible) {
+  text-decoration: none;
+  animation: underline-draw .45s ease-out both;
+}
+
+@keyframes underline-draw {
+  from { background-size: 0 1px; }
+  to { background-size: 100% 1px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.nav-menu a, .nav-menu button, .text-link, .button-primary,
+      .home-projects-all, .archive-index a, .project-external-links a,
+      .footer-links a, .footer-contact, .modal-content a):is(:hover, :focus-visible) {
+    animation: none;
+  }
+}

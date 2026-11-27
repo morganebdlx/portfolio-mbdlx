@@ -1,139 +1,30 @@
-.intro {
-  width: 100%;
-  min-height: 100vh;
-  padding: 2rem 1rem;
-  background: linear-gradient(110deg, #275838 30%, #F2F4F4 99%);
-  display: flex;
-  flex-direction: column;
+.projects-heading h2 em {
+  color: var(--olive);
+  font-weight: 600;
+}
+.text-link {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-}
-
-.intro-left,
-.intro-right {
-  width: 100%;
-  margin: 0;
-  padding: 1rem 0;
-}
-
-.intro-left {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  text-align: flex-start;
-}
-
-.intro-left h1,
-.intro-left h2 {
-  color: #F4f4f2;
-  letter-spacing: -1px;
-  font-weight: 300;
-  line-height: 1;
-  margin: 0 10px;
-}
-
-.intro-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: #F4f4f2;
-  text-align: left;
-}
-
-.intro-right p {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.4;
-  margin: 10px;
-}
-
-.call-to-action {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.cta-btn {
-  width: 80%;
-  max-width: 240px;
-  background-color: #F4f4f2;
-  opacity: 0.9;
-  box-shadow: 0.3em 0.3em 1em rgba(8, 8, 8, 0.6);
-  padding: 10px 20px;
-  border: 1px solid #161817be;
-  border-radius: 50px;
-  cursor: pointer;
-  margin: 10px 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: .45rem;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
   text-decoration: none;
+  text-transform: uppercase;
 }
-
-.cta-btn a {
-  text-decoration: none;
-  color: #161817be;
-  font-family: 'Yeseva One', sans-serif;
-  font-size: 16px;
-  letter-spacing: -1px;
-  display: flex;
-  align-items: center;
+.text-link {
+  padding-bottom: .22rem;
+  border-bottom: 1px solid var(--olive);
+  color: inherit;
+  transition: color .2s ease, border-color .2s ease;
 }
-
-.cta-icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 40px;
+.text-link:hover {
+  color: var(--olive);
+  border-color: currentColor;
 }
-
-.cta-btn:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0.3em 0.3em 1em rgba(8, 8, 8, 0.8);
+.projects-heading h2 em {
+  font-weight: 400;
 }
-
-@media (min-width: 768px) {
-  .intro {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 4rem 2rem;
-  }
-
-  .intro-left {
-    width: 30%;
-    align-items: flex-start;
-    text-align: left;
-    margin: 100px;
-
-  }
-
-  .intro-right {
-    width: 70%;
-    align-items: flex-start;
-    text-align: left;
-    margin-right: 100px;
-  }
-
-  .intro-right p {
-    margin: 15px 0;
-    padding: 0;
-    font-size: 1.1rem;
-    line-height: 1.2;
-  }
-
-  .call-to-action {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .cta-btn {
-    margin: 0 10px;
-    width: 220px;
-  }
-
-  .intro-title {
-    font-size: 3.75rem;
-  }
+.text-link {
+  font-weight: 500;
 }
