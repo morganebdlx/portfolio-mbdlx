@@ -1,1 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Nothing+You+Could+Do&display=swap');
+:root {
+  --olive: #a21212;
+  --sand: #efddc6;
+  --coffee: #301207;
+  --white: #ffffff;
+  --ink-muted: #513225;
+  --line: rgba(34, 22, 18, 0.24);
+  --font-display: "DM Serif Text", Georgia, serif;
+  --font-body: "DM Sans", Arial, sans-serif;
+  --font-handwritten: "Nothing You Could Do", cursive;
+}
 
+.font-handwritten {
+  font-family: var(--font-handwritten);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--white);
+  color: var(--coffee);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+body, button, input, textarea {
+  font-family: var(--font-body);
+}
+a {
+  color: inherit;
+}
+button {
+  font: inherit;
+}
+::selection {
+  background: var(--olive);
+  color: var(--white);
+}
